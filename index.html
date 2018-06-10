@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>梦萦几度</title>
+    <script src="http://how2j.cn/study/js/jquery/2.0.0/jquery.min.js"></script>
+    <link href="http://how2j.cn/study/css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
+    <script src="http://how2j.cn/study/js/bootstrap/3.3.6/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="homePage.css"/> <!-- 导入首页样式 -->
+
+    <script>
+        <!-- 引入置顶导航栏 -->
+        $(document).ready(function(){
+            $("#header").load("./public/topNavigationbar.html");
+        });
+        <!-- 引入搜索栏 -->
+        $(document).ready(function(){
+            $("#Search").load("./public/Search.html");
+        });
+        <!-- 引入footer -->
+        $(document).ready(function(){
+            $("#footer").load("./public/footer.html");
+        });
+        <!-- 引入分类菜单 -->
+        $(document).ready(function () {
+            $("#categotryMenu").load("./menu/categotryMenu.html")
+        })
+
+
+        $(function(){
+            $("div.rightMenu span").mouseenter(function(){
+                var left = $(this).position().left;
+                var top = $(this).position().top;
+                var width = $(this).width();
+                var destLeft = parseInt(left) + width/2.5;
+                $("img#catear").css("left",destLeft);
+                $("img#catear").css("top",top-20);
+                $("img#catear").fadeIn(500);
+            });
+            $("div.rightMenu span").mouseleave(function(){
+                $("img#catear").hide();
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="header"></div>
+<div id="Search"></div>
+
+<!-- 轮播页-----轮播页-----轮播页-----轮播页-----轮播页-----轮播页-----轮播页----- -->
+        <!-- 猫耳朵图片 -->
+
+<div class="categotryWithCarousel">
+    <div class="headbar">
+        <img class="catear" id="catear" src="http://how2j.cn/tmall/img/site/catear.png" style="left: 260.5px; top: 159.65px; display: none;">
+        <div class="head">
+            <span class="glyphicon glyphicon-th-list" style="margin-left: 10px"></span>
+            <span style="margin-left:10px">商品分类</span>
+        </div>
+        <div class="rightMenu">
+            <span><a href="#nowhere"><img src="http://how2j.cn/tmall/img/site/chaoshi.png"></a></span>
+            <span><a href="#nowhere"><img src="http://how2j.cn/tmall/img/site/guoji.png"></a></span>
+            <span><a href="shoppingCart.html">平板电视</a></span>
+            <span><a href="#nowhere">马桶</a></span>
+            <span><a href="#nowhere">沙发</a></span>
+            <span><a href="#nowhere">电热水器</a></span>
+        </div>
+    </div>
+
+
+    <!-- 轮播 -->
+    <div id="carousel-of-product" data-ride="carousel" class="carousel solid">
+        <!-- 轮播指标 -->
+        <ol class="carousel-indicators">
+            <li class="active" data-target="#carousel-of-product" data-slide-to="0"></li>
+            <li data-target="#carousel-of-product" data-slide-to="1"></li>
+            <li data-target="#carousel-of-product" data-slide-to="2"></li>
+            <li data-target="#carousel-of-product" data-slide-to="3"></li>
+        </ol>
+        
+        <!-- 轮播项目 -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="http://how2j.cn/tmall/img/lunbo/1.jpg">
+            </div>
+            <div class="item">
+                <img src="http://how2j.cn/tmall/img/lunbo/2.jpg">
+            </div>
+            <div class="item">
+                <img src="http://how2j.cn/tmall/img/lunbo/3.jpg">
+            </div>
+            <div class="item">
+                <img src="http://how2j.cn/tmall/img/lunbo/4.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="carouselBackgroundDiv"></div>
+
+
+    <!-- 分类菜单==========分类菜单==========分类菜单==========分类菜单==========分类菜单==========分类菜单==========分类菜单==========分类菜单========== -->
+    <div id="categotryMenu"></div>
+    <!-- 分类菜单==========分类菜单==========分类菜单==========分类菜单==========分类菜单==========分类菜单==========分类菜单==========分类菜单========== -->
+</div>
+<!-- 轮播页-----轮播页-----轮播页-----轮播页-----轮播页-----轮播页-----轮播页----- -->
+
+
+
+<!-- 主页分类产品========主页分类产品========主页分类产品========主页分类产品========主页分类产品========主页分类产品========主页分类产品========主页分类产品======== -->
+<div class="homepageCategotryProducts">
+    <div class="eachHomepageCategotry" >
+        <div class="left-mark"></div>
+        <span class="categotryTitle">太阳镜</span>
+        <br/>
+        <div class="categotryRow">
+        <div class="productsItem">
+            <a href="#nowhere"><img src="http://how2j.cn/tmall/img/productSingle_middle/9543.jpg"></a>
+            <a href="#nowhere" class="productsItemDescLink">
+                <span class="productsItemDesc">[热销]好先生同款墨镜孙红雷偏光男士太阳镜韩明星</span>
+            </a>
+            <span class="productsPrice">97.50</span>
+        </div>
+        <div class="productsItem">
+            <a href="#nowhere"><img src="http://how2j.cn/tmall/img/productSingle_middle/9532.jpg"></a>
+            <a class="productsItemDescLink">
+                <span class="productsItemDesc">[热销]陌森太阳眼镜男女2016偏光定制驾驶近视</span>
+            </a>
+            <span class="productsPrice">888.00</span>
+        </div>
+        <div class="productsItem">
+            <a href="productPage.html"><img src="http://how2j.cn/tmall/img/productSingle/8619.jpg"></a>
+            <a href="productPage.html" class="productsItemDescLink">
+                <span class="productsItemDesc">[热销]名媛2016新款女装夏两件套裤韩版雪纺七分裤女</span>
+            </a>
+            <span class="productsPrice">624.00</span>
+        </div>
+        <div class="productsItem">
+            <a href="#nowhere"><img src="http://how2j.cn/tmall/img/productSingle_middle/9510.jpg"></a>
+            <a href="#nowhere" class="productsItemDescLink">
+                <span class="productsItemDesc">[热销]变色眼镜男女款半框太阳镜大框潮流防辐射防</span>
+            </a>
+            <span class="productsPrice">170.00</span>
+        </div>
+        <div class="productsItem">
+            <a href="#nowhere"><img src="http://how2j.cn/tmall/img/productSingle_middle/9499.jpg"></a>
+            <a class="productsItemDescLink">
+                <span class="productsItemDesc">[热销]新款男士偏光太阳镜日夜两用墨镜潮运动开车</span>
+            </a>
+            <span class="productsPrice">551.00</span>
+        </div>
+        <div style="clear: both;"></div>
+        </div>
+    </div>
+
+    <div class="eachHomepageCategotry">
+        <div class="left-mark"></div>
+        <span class="categotryTitle">安全座椅</span>
+        <br/>
+        <div class="categotryRow">
+        <div class="productsItem">
+            <a href="#nowhere"><img src="http://how2j.cn/tmall/img/productSingle_middle/10192.jpg"></a>
+            <a href="#nowhere" class="productsItemDescLink">
+                <span class="productsItemDesc">[热销]新生儿婴儿提篮式安全座椅汽车用车载儿童安全</span>
+            </a>
+            <span class="productsPrice">882.00</span>
+        </div>
+        <div class="productsItem">
+            <a href="#nowhere"><img src="http://how2j.cn/tmall/img/productSingle_middle/10181.jpg"></a>
+            <a href="#nowhere" class="productsItemDescLink">
+                <span class="productsItemDesc">[热销]REEBABY汽车儿童安全座椅ISOFI</span>
+            </a>
+            <span class="productsPrice">1344.00</span>
+        </div>
+        <div class="productsItem">
+            <a href="#nowhere"><img src="http://how2j.cn/tmall/img/productSingle_middle/10170.jpg"></a>
+            <a class="productsItemDescLink">
+                <span class="productsItemDesc">[热销]REEBABY儿童安全座椅9个月-12岁</span>
+            </a>
+            <span class="productsPrice">1216.00</span>
+        </div>
+        <div class="productsItem">
+            <a href="#nowhere"><img src="http://how2j.cn/tmall/img/productSingle_middle/10159.jpg"></a>
+            <a class="productsItemDescLink">
+                <span class="productsItemDesc">[热销]好孩子汽车儿童安全座椅goodbaby9</span>
+            </a>
+            <span class="productsPrice">1199.99</span>
+        </div>
+        <div class="productsItem">
+            <a href="#nowhere"><img src="http://how2j.cn/tmall/img/productSingle_middle/10148.jpg"></a>
+            <a class="productsItemDescLink">
+                <span class="productsItemDesc">[热销]惠尔顿儿童安全座椅isofix硬接口汽车</span>
+            </a>
+            <span class="productsPrice">1193.99</span>
+        </div>
+        <div style="clear: both;"></div>
+        </div>
+    </div>
+    <img src="http://how2j.cn/tmall/img/site/end.png" class="endpng" id="endpng">
+</div>
+
+<!-- 主页分类产品========主页分类产品========主页分类产品========主页分类产品========主页分类产品========主页分类产品========主页分类产品========主页分类产品======== -->
+<div id="footer"></div>
+</body>
+</html>

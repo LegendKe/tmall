@@ -1,0 +1,148 @@
+img.catear#catear {
+  height: 15px;
+  position: absolute;
+}
+
+div.categotryWithCarousel {
+  width: 100%;
+  position: relative;
+}
+
+div.headbar {
+  background-color: #DD2727;
+  height: 36px;
+}
+
+div.categotryWithCarousel div.head {
+  display: inline-block;
+  color: white;
+  font-weight: bold;
+  height: 36px;
+  line-height: 36px;
+  font-size: 16px;
+  margin-left: 100px;
+  background-color: #C60A0A;
+  width: 200px;
+  z-index: -1;
+}
+
+div.categotryWithCarousel div.rightMenu {
+  display: inline-block;
+}
+
+div.rightMenu a {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  margin: 0 20px 0 20px;
+}
+
+div.rightMenu img {
+  height: 35px;
+}
+
+div.categotryWithCarousel div#carousel-of-product {
+  height: 510px;
+  width: 1024px;
+  margin: 0 auto;
+}
+
+div#carousel-of-product div.item img {
+  height: 510px;
+  margin-left: 50px;
+}
+
+div.categotryWithCarousel div.carouselBackgroundDiv {
+  height: 510px;
+  position: absolute;
+  top: 36px;
+  background-color: #E8E8E8;
+  width: 100%;
+  z-index: -1;
+}
+
+/* 轮播页----轮播页----轮播页----轮播页----轮播页----轮播页----轮播页----轮播页----轮播页----轮播页----轮播页----轮播页----轮播页---- */
+
+/* 分类页=======分类页=======分类页=======分类页=======分类页=======分类页=======分类页=======分类页=======分类页=======分类页======= */
+
+div.homepageCategotryProducts {
+  background-color: #F5F5F5;
+  margin: 20px 100px 20px 100px;
+  width: 85%;
+  padding-bottom: 10px;
+}
+
+div.homepageCategotryProducts div.left-mark {
+  background-color: #19C8A9;
+  width: 5px;
+  height: 20px;
+  display: inline-block;
+  margin-left: 5px;
+  vertical-align: top;
+}
+
+div.eachHomepageCategotry span.categotryTitle {
+  font-weight: bold;
+  font-size: 16px;
+  margin-left: 40px;
+}
+
+div.eachHomepageCategotry {
+  padding-top: 50px;
+}
+
+div.eachHomepageCategotry div.productsItem {
+  float: left;
+  margin: 5px;
+  width: 240px;
+  height: 350px;
+  background-color: white;
+}
+
+div.productsItem span.productsItemDesc {
+  display: block;
+}
+
+div.productsItem img {
+  display: block;
+  width: 237px;
+  height: 260px;
+  margin: auto;
+}
+
+div.categotryRow {
+  margin-left: 10px;
+}
+
+img.endpng#endpng {
+  display: block;
+  margin: 30px auto;
+}
+
+div.productsItem span.productsItemDesc {
+  color: #666666;
+  font-size: 12px;
+  padding: 16px;
+  display: block;
+}
+
+div.productsItem span.productsPrice {
+  display: block;
+  color: #FF003A;
+  margin: -10px 16px;
+  font-size: 16px;
+}
+
+div.productsItem a.productsItemDescLink {
+  height: 66px;
+  text-decoration: none;
+  display: block;
+}
+
+div.productsItem:hover {
+  opacity: 0.8;
+  filter: alpha(opacity=70);
+  border: 1px solid #c40000;
+}
+
+/* 推荐产品============推荐产品============推荐产品============推荐产品============推荐产品============推荐产品============推荐产品============ */

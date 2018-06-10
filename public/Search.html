@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="http://how2j.cn/study/js/jquery/2.0.0/jquery.min.js"></script>
+    <link href="http://how2j.cn/study/css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
+    <script src="http://how2j.cn/study/js/bootstrap/3.3.6/bootstrap.min.js"></script>
+
+    <style>
+        div.search#search {
+            min-width: 1024px;
+        }
+        div.searchDiv{
+            background-color: #C40000;
+            width: 400px;
+            display: block;
+            height: 40px;
+            margin: auto;
+            padding: 1px;
+            position: relative;
+            top: -80px;
+        }
+        div.searchDiv input{
+            width: 275px;
+            border: 1px solid transparent;
+            height: 36px;
+            margin: 1px;
+            outline: none;
+        }
+        div.searchDiv button {
+            width: 110px;
+            background-color: #c40000;
+            color: white;
+            font-size: 20px;
+            border: 1px solid transparent;
+            font-weight: bold;
+        }
+        div.searchBelow span {
+            color: #999;
+            margin-right: 20px;
+        }
+        div.searchBelow a {
+            margin-right:20px;
+            font-size: 14px;
+            color: #999;
+        }
+        div.searchBelow a:hover {
+            color: #C40000;
+            text-decoration: none;
+        }
+        div.searchBelow{
+            margin-top: 4px;
+        }
+
+        /* 搜索栏-----搜索栏-----搜索栏-----搜索栏-----搜索栏-----搜索栏-----搜索栏-----搜索栏----- */
+
+    </style>
+</head>
+<body>
+<!-- 搜索栏=================================== -->
+<div class="search" id="search">
+    <a href="#nowhere">
+        <img class="logo" id="logo" src="http://how2j.cn/tmall/img/site/logo.gif">
+    </a>
+    <div>
+        <div class="searchDiv">
+            <input placeholder="时尚男鞋" name="keyword" type="text">
+            <button type="submit" class="searchButton">搜索</button>
+            <div class="searchBelow">
+                <span><a href="#nowhere">平衡车</a>|</span>
+                <span><a href="#nowhere">扫地机器人</a>|</span>
+                <span><a href="#nowhere">智能手机</a>|</span>
+                <span><a href="#nowhere">榨汁机</a></span>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- =======================================搜索栏 -->
+</body>
+</html>

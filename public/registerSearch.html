@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div.registerSearchP {
+            min-width: 1024px;
+        }
+        body{
+            font-size: 12px;
+        }
+        div#simpleSearch a,div.searchBelow span{
+            color: #999;
+        }
+        div#simpleSearch {
+            position: absolute;
+            right: 120px;
+            background-color: #c40000;
+            height: 40px;
+            width: 300px;
+        }
+        div#simpleSearch a:hover {
+            color: #c40000;
+            text-decoration: none;
+        }
+        div#simpleSearch a ,div.searchBelow span{
+            margin-right: 20px;
+            font-size: 14px !important;
+            text-decoration: none;
+        }
+        div#simpleSearch input{
+            width: 222px;
+            height: 32px;
+            margin: 2px;
+            border: 1px solid transparent;
+            outline: none;
+        }
+        div#simpleSearch button {
+            background-color: #c40000;
+            border: 1px solid transparent;
+            color: white;
+            font-size: 15px;
+        }
+        div.searchBelow {
+            margin-top: 5px;
+        }
+        div#searchLogo{
+            position: relative;
+            top: 40px;
+            left: 40px;
+        }
+    </style>
+</head>
+<body >
+<!-- 注册页的搜索栏 -->
+<div class="registerSearchP">
+<div id="searchLogo">
+    <a href="#nowhere" class="simpleLogo" id="simpleLogo">
+        <img src="http://how2j.cn/tmall/img/site/simpleLogo.png">
+    </a>
+</div>
+
+<div id="simpleSearch">
+    <input type="text" placeholder="平衡车">
+    <button type="submit" class="redColor">搜天猫</button>
+    <div class="searchBelow">
+        <span><a href="#nowhere">冰箱</a>|</span>
+        <span><a href="#nowhere">空调</a>|</span>
+        <span><a href="#nowhere">女表</a>|</span>
+        <span><a href="#nowhere">男表</a></span>
+    </div>
+</div>
+</div>
+</body>
+</html>
